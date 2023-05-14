@@ -8,18 +8,25 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/animation-components",
         "index": "apps/animation-components/src/index.html",
         "main": "apps/animation-components/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/animation-components/tsconfig.app.json",
         "assets": [
           "apps/animation-components/src/favicon.ico",
           "apps/animation-components/src/assets"
         ],
-        "styles": ["apps/animation-components/src/styles.scss"],
+        "styles": [
+          "@angular/material/prebuilt-themes/indigo-pink.css",
+          "apps/animation-components/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -69,7 +76,9 @@
     },
     "lint": {
       "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
         "lintFilePatterns": [
           "apps/animation-components/**/*.ts",
@@ -79,7 +88,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/animation-components/jest.config.ts",
         "passWithNoTests": true
