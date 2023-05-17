@@ -1,6 +1,7 @@
 const config = {
   stories: ['../**/*.stories.@(js|jsx|ts|tsx|mdx)'],
   addons: ['@storybook/addon-essentials'],
+  staticDir: ['apps/animation-components/src/assets/rive'],
   framework: {
     name: '@storybook/angular',
     options: {},
