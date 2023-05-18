@@ -1,4 +1,4 @@
-<div class="container" @fade @scale>
+<div class="container" [@fadeScale] #levelUpOverlay>
   <mat-card>
     <canvas riv="level-up-v2.2" width="400" height="400">
       <riv-state-machine name="level-up-v2" play> </riv-state-machine>
@@ -6,7 +6,7 @@
     <mat-card-content>
       <h2>You've reached</h2>
       <h1>Level 5!</h1>
-      <button>Continue</button>
+      <button (click)="onContinue()">Continue</button>
     </mat-card-content>
   </mat-card>
 </div>

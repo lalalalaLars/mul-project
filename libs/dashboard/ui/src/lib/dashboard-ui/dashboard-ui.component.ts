@@ -21,9 +21,13 @@ export class DashboardUiComponent {
 
   open(): void {
     const overlayRef = this.overlay.create();
-    const levelUpOverlay = new ComponentPortal(
+    const campaignCompleteOverlay = new ComponentPortal(
       AnimationsCampaigneCompletedModalFeatureComponent
     );
-    overlayRef.attach(levelUpOverlay);
+    const componentRef = overlayRef.attach(campaignCompleteOverlay);
+
+    componentRef.instance.close.subscribe(() => {
+      overlayRef.dispose();
+    });
   }
 }

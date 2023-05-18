@@ -20,6 +20,10 @@ export class AnimationsXpProgressBarFeatureComponent {
     const levelUpOverlay = new ComponentPortal(
       AnimationsLevelUpModalFeatureComponent
     );
-    overlayRef.attach(levelUpOverlay);
+    const componentRef = overlayRef.attach(levelUpOverlay);
+
+    componentRef.instance.close.subscribe(() => {
+      overlayRef.dispose();
+    });
   }
 }
