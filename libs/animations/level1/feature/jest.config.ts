@@ -1,10 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'animations-xp-progress-bar-feature',
+  displayName: 'animations-level1-feature',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory:
-    '../../../../coverage/libs/animations/xp-progress-bar/feature',
+  coverageDirectory: '../../../../coverage/libs/animations/level1/feature',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

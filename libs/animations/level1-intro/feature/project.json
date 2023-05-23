@@ -1,7 +1,7 @@
 {
-  "name": "animations-xp-progress-bar-feature",
+  "name": "animations-level1-intro-feature",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/animations/xp-progress-bar/feature/src",
+  "sourceRoot": "libs/animations/level1-intro/feature/src",
   "prefix": "mul-project",
   "tags": [],
   "projectType": "library",
@@ -10,7 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/animations/xp-progress-bar/feature/jest.config.ts",
+        "jestConfig": "libs/animations/level1-intro/feature/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -25,8 +25,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/animations/xp-progress-bar/feature/**/*.ts",
-          "libs/animations/xp-progress-bar/feature/**/*.html"
+          "libs/animations/level1-intro/feature/**/*.ts",
+          "libs/animations/level1-intro/feature/**/*.html"
         ]
       }
     }

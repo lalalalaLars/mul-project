@@ -1,18 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AnimationsXpProgressBarFeatureComponent } from '@mul-project/animations/xp-progress-bar/feature';
 import { Overlay, OverlayModule } from '@angular/cdk/overlay';
 import { ComponentPortal } from '@angular/cdk/portal';
-import { AnimationsCampaigneCompletedModalFeatureComponent } from '@mul-project/animations/campaigne-completed-modal/feature';
+import { AnimationsCampaignIntroFeatureComponent } from '@mul-project/animations/campaign-intro/feature';
 
 @Component({
   selector: 'mul-project-dashboard-ui',
   standalone: true,
-  imports: [
-    CommonModule,
-    AnimationsXpProgressBarFeatureComponent,
-    OverlayModule,
-  ],
+  imports: [CommonModule, OverlayModule],
   templateUrl: './dashboard-ui.component.html',
   styleUrls: ['./dashboard-ui.component.scss'],
 })
@@ -21,10 +16,10 @@ export class DashboardUiComponent {
 
   open(): void {
     const overlayRef = this.overlay.create();
-    const campaignCompleteOverlay = new ComponentPortal(
-      AnimationsCampaigneCompletedModalFeatureComponent
+    const campaignIntroOverlay = new ComponentPortal(
+      AnimationsCampaignIntroFeatureComponent
     );
-    const componentRef = overlayRef.attach(campaignCompleteOverlay);
+    const componentRef = overlayRef.attach(campaignIntroOverlay);
 
     componentRef.instance.close.subscribe(() => {
       overlayRef.dispose();

@@ -15,11 +15,20 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mul-project/animations/campaign-intro/feature": [
+        "libs/animations/campaign-intro/feature/src/index.ts"
+      ],
       "@mul-project/animations/campaigne-completed-modal/feature": [
         "libs/animations/campaigne-completed-modal/feature/src/index.ts"
       ],
       "@mul-project/animations/level-up-modal/feature": [
         "libs/animations/level-up-modal/feature/src/index.ts"
+      ],
+      "@mul-project/animations/level1-intro/feature": [
+        "libs/animations/level1-intro/feature/src/index.ts"
+      ],
+      "@mul-project/animations/level1/feature": [
+        "libs/animations/level1/feature/src/index.ts"
       ],
       "@mul-project/animations/xp-progress-bar/feature": [
         "libs/animations/xp-progress-bar/feature/src/index.ts"

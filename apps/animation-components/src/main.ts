@@ -19,25 +19,11 @@ bootstrapApplication(AppComponent, {
               ),
           },
           {
-            path: 'level-up-modal',
+            path: 'level1',
             loadChildren: () =>
-              import('@mul-project/animations/level-up-modal/feature').then(
-                (m) => m.animationsLevelUpModalFeatureRoutes
+              import('@mul-project/animations/level1/feature').then(
+                (m) => m.animationsLevel1FeatureRoutes
               ),
-          },
-          {
-            path: 'xp-progress-bar',
-            loadChildren: () =>
-              import('@mul-project/animations/xp-progress-bar/feature').then(
-                (m) => m.animationsXpProgressBarFeatureRoutes
-              ),
-          },
-          {
-            path: 'campaigne-completed',
-            loadChildren: () =>
-              import(
-                '@mul-project/animations/campaigne-completed-modal/feature'
-              ).then((m) => m.animationsCampaigneCompletedModalFeatureRoutes),
           },
         ],
         { initialNavigation: 'enabledBlocking' }
