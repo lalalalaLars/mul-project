@@ -8,6 +8,14 @@
   backdrop-filter: blur(0.8px);
 }
 
+h4 {
+  padding: 5px 0;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
 mat-card {
   display: flex;
   flex-direction: column;
@@ -18,7 +26,12 @@ mat-card {
   width: 450px;
   border-radius: 20px;
   box-shadow: 3px 3px 5px rgba($color: #aaaa, $alpha: 0.5);
-  background-color: #f2f2f2;
+  background: linear-gradient(
+    0deg,
+    rgba(248, 248, 248, 1) 20%,
+    rgba(144, 255, 91, 1) 100%
+  );
+
   padding-top: 40px;
 }
 
@@ -36,11 +49,16 @@ mat-card-content {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 100px;
   width: 120px;
   height: 120px;
-  background-color: #fff;
-  box-shadow: 3px 3px 8px rgba($color: #aaaa, $alpha: 0.5);
+  background-color: transparent;
+  //box-shadow: 3px 3px 8px rgba($color: #aaaa, $alpha: 0.5);
+}
+
+.checkmark-container {
+  width: 80px;
+  height: 80px;
 }
 
 button {
@@ -59,4 +77,14 @@ button {
 canvas {
   width: 50px;
   height: 50px;
+}
+
+.achievement-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.xp-icon {
+  width: 100px;
+  height: 100px;
 }

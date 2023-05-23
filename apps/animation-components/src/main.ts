@@ -39,6 +39,13 @@ bootstrapApplication(AppComponent, {
                 '@mul-project/animations/campaigne-completed-modal/feature'
               ).then((m) => m.animationsCampaigneCompletedModalFeatureRoutes),
           },
+          {
+            path: 'xp-earned',
+            loadChildren: () =>
+              import('@mul-project/animations/xp-earned-modal/feature').then(
+                (m) => m.animationsXpEarnedModalFeatureRoutes
+              ),
+          },
         ],
         { initialNavigation: 'enabledBlocking' }
       )
