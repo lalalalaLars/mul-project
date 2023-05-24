@@ -1,9 +1,13 @@
 <div class="container" #level1IntroOverlay>
   <mat-card>
-    <mat-card-content>
+    <mat-card-title>
       <h1>Level 1</h1>
+    </mat-card-title>
+    <mat-card-content>
+      <canvas riv="pdf_download" width="400" height="400">
+        <riv-animation name="Idle" play></riv-animation>
+      </canvas>
+      <button (click)="closeLevel1Overlay()">Start level</button>
     </mat-card-content>
-
-    <button (click)="closeLevel1Overlay()">Start</button>
   </mat-card>
 </div>

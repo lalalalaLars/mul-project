@@ -30,6 +30,24 @@
       "@mul-project/animations/level1/feature": [
         "libs/animations/level1/feature/src/index.ts"
       ],
+      "@mul-project/animations/level2-intro/feature": [
+        "libs/animations/level2-intro/feature/src/index.ts"
+      ],
+      "@mul-project/animations/level2/feature": [
+        "libs/animations/level2/feature/src/index.ts"
+      ],
+      "@mul-project/animations/reusable/fade-scale": [
+        "libs/animations/reusable/fade-scale/src/index.ts"
+      ],
+      "@mul-project/animations/rewards/feature": [
+        "libs/animations/rewards/feature/src/index.ts"
+      ],
+      "@mul-project/animations/wrong-answer/feature": [
+        "libs/animations/wrong-answer/feature/src/index.ts"
+      ],
+      "@mul-project/animations/xp-earned/feature": [
+        "libs/animations/xp-earned/feature/src/index.ts"
+      ],
       "@mul-project/animations/xp-progress-bar/feature": [
         "libs/animations/xp-progress-bar/feature/src/index.ts"
       ],

@@ -1,14 +1,18 @@
-<div class="container" [@pageAnimations] [@fadeScale] #test>
+<div class="container" #rewardsOverlay>
   <mat-card>
     <mat-card-header>
-      <h2>Campaign Completed</h2>
+      <h1>Well done!</h1>
+      <h4>You’ve been rewarded!</h4>
     </mat-card-header>
     <canvas riv="checkmark" width="100" height="100">
       <riv-animation name="Checkmark" play></riv-animation>
     </canvas>
     <mat-card-content class="rewards-wrapper">
       <div class="achievement-container"><h4>Achievement</h4></div>
-      <div class="xp-container"><h4>XP</h4></div>
+
+      <canvas class="xp-container" riv="xp" width="400" height="400">
+        <riv-animation name="Idle" play></riv-animation>
+      </canvas>
     </mat-card-content>
     <button (click)="onCollectRewards()">Collect Rewards</button>
   </mat-card>
