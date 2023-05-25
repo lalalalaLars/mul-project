@@ -1,21 +1,31 @@
-/* eslint-disable @angular-eslint/no-output-native */
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { OverlayModule } from '@angular/cdk/overlay';
+import { Router } from '@angular/router';
+import { trigger, style, transition, animate } from '@angular/animations';
+
 import { RiveModule } from 'ng-rive';
 
 @Component({
   selector: 'mul-project-animations-level1-intro-feature',
   standalone: true,
-  imports: [CommonModule, MatCardModule, OverlayModule, RiveModule],
+  imports: [CommonModule, MatCardModule, RiveModule],
   templateUrl: './animations-level1-intro-feature.component.html',
   styleUrls: ['./animations-level1-intro-feature.component.scss'],
+  animations: [
+    trigger('fade', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('300ms ease-in', style({ opacity: 1 })),
+      ]),
+      transition(':leave', [animate('300ms ease-out', style({ opacity: 0 }))]),
+    ]),
+  ],
 })
 export class AnimationsLevel1IntroFeatureComponent {
-  @Output() close: EventEmitter<void> = new EventEmitter<void>();
+  constructor(private router: Router) {}
 
   closeLevel1Overlay() {
-    this.close.emit();
+    this.router.navigateByUrl('/level1');
   }
 }

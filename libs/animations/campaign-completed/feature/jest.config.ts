@@ -1,10 +1,10 @@
 /* eslint-disable */
 export default {
-  displayName: 'animations-campaigne-completed-modal-feature',
+  displayName: 'animations-campaign-completed-feature',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory:
-    '../../../../coverage/libs/animations/campaigne-completed-modal/feature',
+    '../../../../coverage/libs/animations/campaign-completed/feature',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

@@ -1,7 +1,7 @@
 {
-  "name": "animations-campaigne-completed-modal-feature",
+  "name": "animations-campaign-completed-feature",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/animations/campaigne-completed-modal/feature/src",
+  "sourceRoot": "libs/animations/campaign-completed/feature/src",
   "prefix": "mul-project",
   "tags": [],
   "projectType": "library",
@@ -10,7 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/animations/campaigne-completed-modal/feature/jest.config.ts",
+        "jestConfig": "libs/animations/campaign-completed/feature/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -25,8 +25,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/animations/campaigne-completed-modal/feature/**/*.ts",
-          "libs/animations/campaigne-completed-modal/feature/**/*.html"
+          "libs/animations/campaign-completed/feature/**/*.ts",
+          "libs/animations/campaign-completed/feature/**/*.html"
         ]
       }
     }

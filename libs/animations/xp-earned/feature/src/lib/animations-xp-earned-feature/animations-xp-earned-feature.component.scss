@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -20,10 +25,19 @@ mat-card {
   box-shadow: 3px 3px 5px rgba($color: #aaaa, $alpha: 0.5);
   background: linear-gradient(
     0deg,
-    rgba(248, 248, 248, 1) 0%,
+    rgba(248, 248, 248, 1) 20%,
     rgba(139, 186, 255, 1) 100%
   );
   padding-top: 40px;
+}
+
+h1 {
+  padding-bottom: 20px;
+}
+
+mat-card-header {
+  display: flex;
+  flex-direction: column;
 }
 
 mat-card-content {
@@ -36,17 +50,18 @@ mat-card-content {
 button {
   background-color: #4c4c4c;
   color: #f8f8f8;
-  width: 160px;
+  width: 144px;
   height: 45px;
   border-radius: 10px;
   border: none;
-  margin-top: 60px;
-  //box-shadow: 2px 2px 1px 1px rgba($color: #000000, $alpha: 0.1);
-  font-size: 14px;
+  margin-bottom: 60px;
+  font-size: 16px;
   letter-spacing: 1px;
 }
 
 canvas {
   width: 150px;
   height: 150px;
+
+  padding-bottom: 50px;
 }

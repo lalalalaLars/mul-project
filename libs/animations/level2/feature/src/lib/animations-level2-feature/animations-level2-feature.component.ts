@@ -1,42 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Overlay, OverlayModule } from '@angular/cdk/overlay';
-import { ComponentPortal } from '@angular/cdk/portal';
-import { AnimationsLevel2IntroFeatureComponent } from '@mul-project/animations/level2-intro/feature';
-import { AnimationsRewardsFeatureComponent } from '@mul-project/animations/rewards/feature';
+import { trigger, style, transition, animate } from '@angular/animations';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'mul-project-animations-level2-feature',
   standalone: true,
-  imports: [CommonModule, OverlayModule],
+  imports: [CommonModule],
   templateUrl: './animations-level2-feature.component.html',
   styleUrls: ['./animations-level2-feature.component.scss'],
+  animations: [
+    trigger('fade', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('300ms ease-in', style({ opacity: 1 })),
+      ]),
+      transition(':leave', [animate('300ms ease-out', style({ opacity: 0 }))]),
+    ]),
+  ],
 })
-export class AnimationsLevel2FeatureComponent implements OnInit {
-  constructor(private overlay: Overlay) {}
+export class AnimationsLevel2FeatureComponent {
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {
-    const overlayRef = this.overlay.create();
-    const level2IntroOverlay = new ComponentPortal(
-      AnimationsLevel2IntroFeatureComponent
-    );
-    const componentRef = overlayRef.attach(level2IntroOverlay);
-
-    componentRef.instance.close.subscribe(() => {
-      overlayRef.dispose();
-    });
-  }
-
-  openRewardsOverlay(): void {
-    const overlayRef = this.overlay.create();
-    const rewardsOverlay = new ComponentPortal(
-      AnimationsRewardsFeatureComponent
-    );
-
-    const componentRef = overlayRef.attach(rewardsOverlay);
-
-    componentRef.instance.close.subscribe(() => {
-      overlayRef.dispose();
-    });
+  openRewardsOverlay() {
+    this.router.navigateByUrl('/rewards');
   }
 }

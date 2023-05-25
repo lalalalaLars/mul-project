@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mul-project/animations/campaign-completed/feature": [
+        "libs/animations/campaign-completed/feature/src/index.ts"
+      ],
       "@mul-project/animations/campaign-intro/feature": [
         "libs/animations/campaign-intro/feature/src/index.ts"
       ],
