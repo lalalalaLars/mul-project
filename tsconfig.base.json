@@ -39,6 +39,9 @@
       "@mul-project/animations/level2/feature": [
         "libs/animations/level2/feature/src/index.ts"
       ],
+      "@mul-project/animations/on-fire/feature": [
+        "libs/animations/on-fire/feature/src/index.ts"
+      ],
       "@mul-project/animations/reusable/fade-scale": [
         "libs/animations/reusable/fade-scale/src/index.ts"
       ],

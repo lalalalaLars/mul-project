@@ -68,6 +68,13 @@ bootstrapApplication(AppComponent, {
               ),
           },
           {
+            path: 'on-fire',
+            loadChildren: () =>
+              import('@mul-project/animations/on-fire/feature').then(
+                (m) => m.animationsOnFireFeatureRoutes
+              ),
+          },
+          {
             path: 'campaign-completed',
             loadChildren: () =>
               import('@mul-project/animations/campaign-completed/feature').then(
