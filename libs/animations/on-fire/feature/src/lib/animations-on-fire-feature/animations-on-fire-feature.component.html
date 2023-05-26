@@ -1,5 +1,5 @@
 <div class="container">
-  <mat-card>
+  <mat-card [@fadeScale]>
     <mat-card-header>
       <h1>You're on fire!</h1>
       <h4></h4>
@@ -10,6 +10,6 @@
       </canvas>
     </mat-card-content>
 
-    <button>Next level</button>
+    <button (click)="continue()">Continue</button>
   </mat-card>
 </div>

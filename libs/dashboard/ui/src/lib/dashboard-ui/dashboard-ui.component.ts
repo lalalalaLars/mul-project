@@ -13,6 +13,6 @@ export class DashboardUiComponent {
   constructor(private router: Router) {}
 
   open(): void {
-    this.router.navigateByUrl('/campaign-intro');
+    this.router.navigateByUrl('/level1-intro');
   }
 }

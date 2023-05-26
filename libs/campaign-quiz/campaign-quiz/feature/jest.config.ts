@@ -1,9 +1,10 @@
 /* eslint-disable */
 export default {
-  displayName: 'animations-level2-feature',
+  displayName: 'campaign-quiz-campaign-quiz-feature',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../../coverage/libs/animations/level2/feature',
+  coverageDirectory:
+    '../../../../coverage/libs/campaign-quiz/campaign-quiz/feature',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

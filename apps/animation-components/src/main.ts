@@ -18,13 +18,7 @@ bootstrapApplication(AppComponent, {
                 (m) => m.dashboardUiRoutes
               ),
           },
-          {
-            path: 'campaign-intro',
-            loadChildren: () =>
-              import('@mul-project/animations/campaign-intro/feature').then(
-                (m) => m.animationsCampaignIntroFeatureRoutes
-              ),
-          },
+
           {
             path: 'level1-intro',
             loadChildren: () =>
@@ -56,8 +50,8 @@ bootstrapApplication(AppComponent, {
           {
             path: 'level2',
             loadChildren: () =>
-              import('@mul-project/animations/level2/feature').then(
-                (m) => m.animationsLevel2FeatureRoutes
+              import('@mul-project/campaign-quiz/campaign-quiz/feature').then(
+                (m) => m.campaignQuizCampaignQuizFeatureRoutes
               ),
           },
           {
@@ -74,6 +68,7 @@ bootstrapApplication(AppComponent, {
                 (m) => m.animationsOnFireFeatureRoutes
               ),
           },
+
           {
             path: 'campaign-completed',
             loadChildren: () =>

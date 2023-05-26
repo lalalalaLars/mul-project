@@ -1,7 +1,7 @@
 {
-  "name": "animations-campaign-intro-feature",
+  "name": "campaign-quiz-campaign-quiz-feature",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/animations/campaign-intro/feature/src",
+  "sourceRoot": "libs/campaign-quiz/campaign-quiz/feature/src",
   "prefix": "mul-project",
   "tags": [],
   "projectType": "library",
@@ -10,7 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/animations/campaign-intro/feature/jest.config.ts",
+        "jestConfig": "libs/campaign-quiz/campaign-quiz/feature/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -25,8 +25,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/animations/campaign-intro/feature/**/*.ts",
-          "libs/animations/campaign-intro/feature/**/*.html"
+          "libs/campaign-quiz/campaign-quiz/feature/**/*.ts",
+          "libs/campaign-quiz/campaign-quiz/feature/**/*.html"
         ]
       }
     }

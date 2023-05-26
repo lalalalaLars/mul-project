@@ -48,6 +48,9 @@
       "@mul-project/animations/rewards/feature": [
         "libs/animations/rewards/feature/src/index.ts"
       ],
+      "@mul-project/animations/try-again/feature": [
+        "libs/animations/try-again/feature/src/index.ts"
+      ],
       "@mul-project/animations/wrong-answer/feature": [
         "libs/animations/wrong-answer/feature/src/index.ts"
       ],
@@ -56,6 +59,12 @@
       ],
       "@mul-project/animations/xp-progress-bar/feature": [
         "libs/animations/xp-progress-bar/feature/src/index.ts"
+      ],
+      "@mul-project/campaign-quiz/campaign-quiz.service/feature": [
+        "libs/campaign-quiz/campaign-quiz.service/feature/src/index.ts"
+      ],
+      "@mul-project/campaign-quiz/campaign-quiz/feature": [
+        "libs/campaign-quiz/campaign-quiz/feature/src/index.ts"
       ],
       "@mul-project/dashboard/ui": ["libs/dashboard/ui/src/index.ts"]
     }
