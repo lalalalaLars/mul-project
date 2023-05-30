@@ -1,3 +1,4 @@
+/* eslint-disable @nx/enforce-module-boundaries */
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -5,14 +6,8 @@ import { Router } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { trigger, style, transition, animate } from '@angular/animations';
 
-interface Quiz {
-  question: string;
-  options: string[];
-  answer: string;
-  userAnswer: string;
-  result: string;
-}
-
+import { QuizInterface } from 'libs/campaign-quiz/service/src/lib/campaign-quiz-service/campaign-quiz-service.service';
+import { CampaignQuizService } from 'libs/campaign-quiz/service/src/lib/campaign-quiz-service/campaign-quiz-service.service';
 @Component({
   selector: 'mul-project-campaign-quiz-campaign-quiz-feature',
   standalone: true,
@@ -30,25 +25,14 @@ interface Quiz {
   ],
 })
 export class CampaignQuizCampaignQuizFeatureComponent {
-  quizzes: Quiz[] = [
-    {
-      question: 'What is the capital of France?',
-      options: ['Paris', 'Berlin', 'London'],
-      answer: 'Paris',
-      userAnswer: '',
-      result: '',
-    },
-    {
-      question: 'Who painted the Mona Lisa?',
-      options: ['Leonardo da Vinci', 'Pablo Picasso', 'Vincent van Gogh'],
-      answer: 'Leonardo da Vinci',
-      userAnswer: '',
-      result: '',
-    },
-    // Add more quiz questions here
-  ];
+  quizzes: QuizInterface[];
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private campaignQuizService: CampaignQuizService
+  ) {
+    this.quizzes = this.campaignQuizService.getQuizzes();
+  }
 
   currentQuestionIndex = 0;
   showResults = false;

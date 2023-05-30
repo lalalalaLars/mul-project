@@ -11,6 +11,11 @@
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(0.8px);
+  background: linear-gradient(
+    0deg,
+    rgba(232, 232, 255, 1) 0%,
+    rgba(0, 0, 255, 1) 100%
+  );
 }
 
 mat-card {
