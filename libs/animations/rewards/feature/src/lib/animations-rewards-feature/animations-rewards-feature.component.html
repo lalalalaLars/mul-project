@@ -1,0 +1,24 @@
+<div class="container">
+  <mat-card [@fallIn] [@fadeScale]>
+    <mat-card-header>
+      <h1>Well done!</h1>
+      <h4>You’ve been rewarded!</h4>
+    </mat-card-header>
+
+    <mat-card-content class="rewards-wrapper">
+      <canvas
+        class="achievement-container"
+        riv="lightning_badge"
+        width="400"
+        height="400"
+      >
+        <riv-animation name="Idle" play></riv-animation>
+      </canvas>
+
+      <canvas class="xp-container" riv="500-xp" width="400" height="400">
+        <riv-animation name="Idle" play></riv-animation>
+      </canvas>
+    </mat-card-content>
+    <button (click)="claimRewards()">Claim Rewards</button>
+  </mat-card>
+</div>

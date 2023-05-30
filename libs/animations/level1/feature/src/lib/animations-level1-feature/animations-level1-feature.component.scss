@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(232, 232, 255, 1) 0%,
+    rgba(0, 0, 255, 1) 100%
+  );
+}
+
+button {
+  width: 250px;
+  height: 90px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4c4c4c;
+  color: #fff;
+  font-size: 25px;
+}

@@ -1,0 +1,15 @@
+<div class="container">
+  <mat-card [@fadeScale] [@fallIn]>
+    <mat-card-header>
+      <h1>Congrats!</h1>
+      <h4>You've earned XP!</h4>
+    </mat-card-header>
+    <mat-card-content>
+      <canvas class="xp-icon" riv="xp" width="400" height="400">
+        <riv-animation name="Idle" play></riv-animation>
+      </canvas>
+    </mat-card-content>
+
+    <button (click)="closeXpEarnedOverlay()">Next level</button>
+  </mat-card>
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+  <mat-card>
+    <mat-card-header>
+      <h1>Completed!</h1>
+      <h4>
+        Good job! <br />
+        You completed the campaign!
+      </h4>
+    </mat-card-header>
+
+    <mat-card-content>
+      <canvas
+        class="checkmark-container"
+        riv="checkmark"
+        width="300"
+        height="300"
+      >
+        <riv-animation name="Checkmark" play></riv-animation>
+      </canvas>
+    </mat-card-content>
+    <button (click)="finish()">Finish</button>
+  </mat-card>
+</div>

@@ -1,0 +1,12 @@
+<div class="container">
+  <mat-card [@fade]>
+    <mat-card-header><h1>Level 2</h1></mat-card-header>
+    <mat-card-content>
+      <canvas riv="survey" width="400" height="400">
+        <riv-animation name="Idle" play></riv-animation>
+      </canvas>
+    </mat-card-content>
+
+    <button (click)="closeLevel2Overlay()">Start level</button>
+  </mat-card>
+</div>
