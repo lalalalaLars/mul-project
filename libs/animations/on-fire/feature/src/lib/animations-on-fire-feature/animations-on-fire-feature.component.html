@@ -1,0 +1,15 @@
+<div class="container">
+  <mat-card [@fadeScale]>
+    <mat-card-header>
+      <h1>You're on fire!</h1>
+      <h4></h4>
+    </mat-card-header>
+    <mat-card-content>
+      <canvas riv="flame" width="400" height="400">
+        <riv-animation name="Idle" play></riv-animation>
+      </canvas>
+    </mat-card-content>
+
+    <button (click)="continue()">Continue</button>
+  </mat-card>
+</div>

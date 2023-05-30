@@ -15,9 +15,58 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mul-project/animations/campaign-completed/feature": [
+        "libs/animations/campaign-completed/feature/src/index.ts"
+      ],
+      "@mul-project/animations/campaign-intro/feature": [
+        "libs/animations/campaign-intro/feature/src/index.ts"
+      ],
+      "@mul-project/animations/campaigne-completed-modal/feature": [
+        "libs/animations/campaigne-completed-modal/feature/src/index.ts"
+      ],
       "@mul-project/animations/level-up-modal/feature": [
         "libs/animations/level-up-modal/feature/src/index.ts"
-      ]
+      ],
+      "@mul-project/animations/level1-intro/feature": [
+        "libs/animations/level1-intro/feature/src/index.ts"
+      ],
+      "@mul-project/animations/level1/feature": [
+        "libs/animations/level1/feature/src/index.ts"
+      ],
+      "@mul-project/animations/level2-intro/feature": [
+        "libs/animations/level2-intro/feature/src/index.ts"
+      ],
+      "@mul-project/animations/level2/feature": [
+        "libs/animations/level2/feature/src/index.ts"
+      ],
+      "@mul-project/animations/on-fire/feature": [
+        "libs/animations/on-fire/feature/src/index.ts"
+      ],
+      "@mul-project/animations/reusable/fade-scale": [
+        "libs/animations/reusable/fade-scale/src/index.ts"
+      ],
+      "@mul-project/animations/rewards/feature": [
+        "libs/animations/rewards/feature/src/index.ts"
+      ],
+      "@mul-project/animations/try-again/feature": [
+        "libs/animations/try-again/feature/src/index.ts"
+      ],
+      "@mul-project/animations/wrong-answer/feature": [
+        "libs/animations/wrong-answer/feature/src/index.ts"
+      ],
+      "@mul-project/animations/xp-earned/feature": [
+        "libs/animations/xp-earned/feature/src/index.ts"
+      ],
+      "@mul-project/animations/xp-progress-bar/feature": [
+        "libs/animations/xp-progress-bar/feature/src/index.ts"
+      ],
+      "@mul-project/campaign-quiz/campaign-quiz.service/feature": [
+        "libs/campaign-quiz/campaign-quiz.service/feature/src/index.ts"
+      ],
+      "@mul-project/campaign-quiz/campaign-quiz/feature": [
+        "libs/campaign-quiz/campaign-quiz/feature/src/index.ts"
+      ],
+      "@mul-project/dashboard/ui": ["libs/dashboard/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

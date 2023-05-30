@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(0.8px);
+  background: linear-gradient(
+    0deg,
+    rgba(232, 232, 255, 1) 0%,
+    rgba(0, 0, 255, 1) 100%
+  );
+}
+
+mat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 550px;
+  width: 450px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px rgba($color: #aaaa, $alpha: 0.5);
+  background: linear-gradient(
+    0deg,
+    rgba(248, 248, 248, 1) 20%,
+    rgba(255, 228, 84, 1) 100%
+  );
+  padding-top: 40px;
+}
+
+mat-card-header {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  padding-bottom: 5px;
+}
+
+mat-card-content {
+  display: flex;
+  margin-top: 80px;
+  gap: 50px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.achievement-container,
+.xp-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+}
+
+button {
+  background-color: #4c4c4c;
+  color: #f8f8f8;
+  width: 165px;
+  height: 47px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 40px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
